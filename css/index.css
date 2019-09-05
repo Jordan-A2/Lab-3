@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+  margin-left: 45%;
+}
+
+h1{
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navbar{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(70, 70, 70);
+  overflow: hidden;
+}
+
+h2{
+  text-align: center;
+}
+
+footer{
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.social{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@media (min-width: 0px) and (max-width: 719px){ /* media query, only applies if the criteria are met. 
+  This example shows what is displayed on a phone. */
+  main{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .product{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .hamburger{
+    display: flex;
+    margin-left: 97%;
+    color: white;
+  }
+
+  .fas.fa-apple-alt.fa-5x{
+    margin-left: 43%;
+  }
+  
+  .fas.fa-money-bill-wave.fa-5x{
+    margin-left: 40%;
+  }
+  
+  .fas.fa-utensils.fa-5x{
+    margin-left: 43%;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 990px){ /* on a tablet */
+  main{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .product{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 100%;
+    margin: 0.5%;
+  }
+
+  header{
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1{
+    padding-left: 25%;
+  }
+
+  .fas.fa-apple-alt.fa-5x{
+    margin-left: 46%;
+  }
+  
+  .fas.fa-money-bill-wave.fa-5x{
+    margin-left: 43%;
+  }
+  
+  .fas.fa-utensils.fa-5x{
+    margin-left: 46%;
+  }
+
+  .logo{
+    padding-left: 10%;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .hamburger{
+    display: flex;
+    margin-left: 98%;
+    color: white;
+  }
+  
+}
+
+@media (min-width: 991px){ /* on a bigger screen */
+   main{
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-self: flex-start;
+  }
+
+  .product{
+      border: 1px solid gray;
+      padding: 10px;
+      width: 30%;
+  }
+
+  header{
+      display: flex;
+      flex-direction: row;
+  }
+
+  h1{
+    padding-left: 25%;
+  }
+
+  .fas.fa-apple-alt.fa-5x{
+    margin-left: 40%;
+  }
+  
+  .fas.fa-money-bill-wave.fa-5x{
+    margin-left: 35%;
+  }
+  
+  .fas.fa-utensils.fa-5x{
+    margin-left: 40%;
+  }
+
+  .logo{
+    padding-left: 10%;
+  }
+
+  .menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-left: 60%;
+    margin-right: 5%;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .hamburger{
+    display: none;
+  }
+
+}
+
